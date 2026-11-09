@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p7_</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    
+    <style>
+       
+       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+        :root {
+            --lime-color: #CCFF02;
+            --storm-color: #8695A8;
+            --violet-color: #E4D2FC;
+            --chilli-color: #EF432B;
+            --dark-color: #282725;
+            --light-color: #EFEAE7;
+            --forest-color: #325444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            height: 800px;
+            width: 100%;
+            grid-template-columns: 3fr 3fr 2fr;
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;  
+        }  
+        
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        h1 {
+            align-self: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400;
+            line-height: 0.8;
+        }
+
+        .lime {
+            padding: 10px;
+            grid-area: 1 / 1 / 3 / 2;
+            background-color: var(--lime-color);
+            color:#315442;
+        }
+
+        .lime h1 {
+            font-size: 13em
+            }
+
+        .storm {
+            padding: 10px;
+            grid-area: 3 / 1 / 5 / 2;
+            background-color: var(--storm-color);
+            color: #EFEAE6;
+        }
+
+        .storm h1 {
+            font-size: 10em
+            }
+
+        .violet {
+            padding: 9px;
+            grid-area: 5 / 1 / 7 / 2;
+            background-color: var(--violet-color);
+            color: #EF432B;
+        }
+
+        .violet h1 {
+            font-size: 10em
+            }
+
+        .chilli {
+            padding: 10px;
+            grid-area: 7 / 1 / 9 / 2;
+            background-color: var(--chilli-color);
+            color: #EEEAE7;
+        }
+
+        .chilli h1 {
+            font-size: 11em;
+            }
+
+        .dark {
+            padding: 10px;
+            grid-area: 1 / 2 / 4 / 3;
+            background-color: var(--dark-color);
+            color: #EEEBE8;
+        }
+
+        .dark h1 {
+            font-size: 12em
+            }
+
+        .light {
+            padding: 10px;
+            grid-area: 4 / 2 / 9 / 3;
+            background-color: var(--light-color);
+            color: #282625;
+            justify-content: space-between;
+        }
+
+        .light h1 {
+            font-size: 9em;
+            }
+
+        .forest {
+            padding: 10px;
+            grid-area: 1 / 3 / 9 / 4;
+            background-color: var(--forest-color);
+            color: #EFEAE7;
+        }
+
+        .forest h1 {
+            align-self:first baseline;
+            font-size: 13em;
+            writing-mode: vertical-rl;
+         }
+         
+         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+            <article class="lime">
+                <p>#CCFF02</p>
+                <h1>LIME</h1>
+            </article>
+
+            <article class="storm">
+                <p>#8696A8</p>
+                <h1>STORM</h1>
+            </article>
+
+            <article class="violet">
+                <p>#E4D2FC</p>
+                <h1>VIOLET</h1>
+            </article>
+
+            <article class="chilli">
+                <p>#EF432B</p>
+                <h1>CHILLI</h1>
+            </article>
+
+            <article class="dark">
+                <p>#282625</p>
+                <h1>DARK</h1>
+            </article>
+
+            <article class="light">
+                <p>#EFEAE8</p>
+                <h1>LIGHT&<br>BRIGHT</h1>
+            </article>
+
+            <article class="forest">
+                <p>#325444</p>
+                <h1>FOREST</h1>
+            </article>
+        
+    </div>
+</body>
+
+</html>
